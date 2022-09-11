@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let pelicula= prompt("digite el numero de una pelicula: 1.el resplandor, 2. planeta del tesoro, 3.atlantis, 4.20000 lenguas de un viaje submarino, 5.moana un mar de aventuras") 
+       pelicula=parseInt(pelicula)
+       if (pelicula>=1 && pelicula<6){
+        let boletos=prompt("cuantos boletos desea?")
+            if (boletos>5)
+            {
+                precio = 10000
+                precio = parseInt(precio)
+                
+                total = precio * boletos
+                iva = total * 0.5
+                final = total-iva
+                document.write("el valor de tu compra es de", final, "descuento")
+            }
+            else if(boletos<=5){
+                precio = 10000
+                precio = parseInt(precio)
+                total = precio * boletos 
+                document.write("el valor de tu compra es de", total)
+            }
+            else{
+                document.write("digite un valor valido") 
+            }
+       }
+       else{
+                document.write("digite un numero que se ncuentr en la lista  peliculas ") 
+            }
+       
+       
+    </script>
+</body>
+</html>
