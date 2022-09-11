@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css" type = "text/css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <p>Digite el numero que le gustaria calcular</p>
+
+   
+       <input class = "textbox1" id= "type="text">
+       <input class = "textbox2" id= "type="text">
+       <button type="button" onclick="suma()"> + </button>
+       <button type="button" onclick="resta()"> - </button>
+       <button type="button" onclick="multiplicacion()"> * </button>
+       <button type="button" onclick="division()"> / </button>
+       <button type="button" onclick="porcentaje()"> % </button>
+
+       
+   
+
+    <script>
+        function calculadora()
+        {
+
+        }
+        function suma() {
+
+            var num1 = document.getElementsByClassName("textbox1")[0].value;
+            var num2 = document.getElementsByClassName("textbox2")[0].value;
+
+            num1 = parseInt(num1)
+            num2 = parseInt(num2)
+
+            result = num1 + num2;
+
+            result = parseInt(result)
+
+            window.alert(result);
+
+        }
+
+        function resta() {
+
+        var num1 = document.getElementsByClassName("textbox1")[0].value;
+        var num2 = document.getElementsByClassName("textbox2")[0].value;
+
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+        result = num1 - num2;
+
+        result = parseInt(result)
+
+        window.alert(result);
+
+      }
+
+      function multiplicacion() {
+
+var num1 = document.getElementsByClassName("textbox1")[0].value;
+var num2 = document.getElementsByClassName("textbox2")[0].value;
+
+num1 = parseInt(num1)
+num2 = parseInt(num2)
+
+result = num1 * num2;
+
+result = parseInt(result)
+
+window.alert(result);
+
+}
+function division() {
+
+var num1 = document.getElementsByClassName("textbox1")[0].value;
+var num2 = document.getElementsByClassName("textbox2")[0].value;
+
+num1 = parseInt(num1)
+num2 = parseInt(num2)
+
+result = num1 / num2;
+
+result = parseInt(result)
+
+window.alert(result);
+
+}
+function porcentaje() {
+
+var num1 = document.getElementsByClassName("textbox1")[0].value;
+var num2 = document.getElementsByClassName("textbox2")[0].value;
+
+num1 = parseInt(num1)
+num2 = parseInt(num2)
+
+result = num1 % num2;
+
+result = parseInt(result)
+
+window.alert(result);
+
+}
+
+
+
+
+    </script>
+
+</body>
+</html>
